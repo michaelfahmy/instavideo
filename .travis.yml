@@ -10,4 +10,5 @@ script:
   - bundle exec rubocop
   - bundle exec brakeman -6 -q
   - bundle exec rspec
-  - bundle exec undercover -c origin/master
+  - git fetch origin master:master
+  - bundle exec undercover -c master
