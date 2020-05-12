@@ -1,24 +1,28 @@
-# README
+# InstaVideo
+[![Build Status](https://travis-ci.com/michaelfahmy/instavideo.svg?token=mWrJxJskRjZTzzWsk7rr&branch=master)](https://travis-ci.com/michaelfahmy/instavideo)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirements:
+* Ruby 2.7.1
+* Rails 6.0.3
+* PostgreSQL 12.2
+* Node ~>13.12.0
+* Yarn ~>1.22.4
 
-Things you may want to cover:
+## Setup
+1. `yarn`
+2. `bundle`
+3. Configure db with your creds in `config/database.yml`
+4. `rails db:create db:migrate db:seed`
+5. You're good to go now ;)
 
-* Ruby version
+## Development
+- Install foreman locally using `gem install foreman`
+- Then run `foreman s`
 
-* System dependencies
+## Commands
+- Linter checks: `rubocop --disable-pending-cops`
+- Security checks: `brakeman -6 -q`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Testing
+- `rspec`
+- `undercover` to test coverage
