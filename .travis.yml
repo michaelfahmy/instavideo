@@ -1,7 +1,14 @@
 language: ruby
 rvm: 2.7
 cache: bundler
+services: postgresql
+
+before_script:
+  - psql -c 'create database instavideo_test;' -U postgres
 
 script:
   - bundle exec rubocop
   - bundle exec brakeman -6 -q
+  - bundle exec rspec
+  - git fetch origin master:master
+  - bundle exec undercover -c master

@@ -10,3 +10,10 @@ AllCops:
     - db/schema.rb
     - vendor/**/*
     - node_modules/**/*
+
+Style/BlockComments:
+  Exclude:
+    - spec/spec_helper.rb
+
+Style/RegexpLiteral:
+  AllowInnerSlashes: true
