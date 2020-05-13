@@ -63,11 +63,6 @@ Metrics/CyclomaticComplexity:
   Max: 8
 
 # Offense count: 1
-# Configuration parameters: CountComments, ExcludedMethods.
-Metrics/MethodLength:
-  Max: 13
-
-# Offense count: 1
 # Configuration parameters: IgnoredMethods.
 Metrics/PerceivedComplexity:
   Max: 8
@@ -85,17 +80,6 @@ Rails/FilePath:
 Rails/Present:
   Exclude:
     - 'bin/bundle'
-
-# Offense count: 5
-Style/Documentation:
-  Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-    - 'app/controllers/home_controller.rb'
-    - 'app/helpers/application_helper.rb'
-    - 'app/mailers/application_mailer.rb'
-    - 'app/models/application_record.rb'
-    - 'config/application.rb'
 
 # Offense count: 3
 # Cop supports --auto-correct.

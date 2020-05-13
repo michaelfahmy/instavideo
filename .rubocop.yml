@@ -12,9 +12,24 @@ AllCops:
     - node_modules/**/*
 
 # Ruby
+Metrics/MethodLength:
+  Exclude:
+    - bin/bundle
+    - db/migrate/*
+
 Style/BlockComments:
   Exclude:
     - spec/spec_helper.rb
+
+Style/Documentation:
+  Exclude:
+    - spec/**/*
+    - app/models/*
+    - app/controllers/*
+    - app/mailers/*
+    - app/helpers/*
+    - config/application.rb
+    - db/migrate/*
 
 Style/RegexpLiteral:
   AllowInnerSlashes: true
