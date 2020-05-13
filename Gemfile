@@ -14,6 +14,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # gem 'redis', '~> 4.0'
 
 # HTML/JS gems
+gem 'hamlit-rails'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
