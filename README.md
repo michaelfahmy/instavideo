@@ -20,7 +20,9 @@
 - Then run `foreman s`
 
 ## Commands
-- Linter checks: `rubocop --disable-pending-cops`
+- Linters checks:
+  - `rubocop --disable-pending-cops`
+  - `haml-lint`
 - Security checks: `brakeman -6 -q`
 
 ## Testing
