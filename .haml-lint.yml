@@ -1,0 +1,9 @@
+linters:
+  LineLength:
+    enabled: false
+
+  IdNames:
+    style: camel_case
+
+  ClassesBeforeIds:
+    EnforcedStyle: id

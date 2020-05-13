@@ -14,6 +14,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # gem 'redis', '~> 4.0'
 
 # HTML/JS gems
+gem 'hamlit-rails'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
@@ -46,6 +47,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'letter_opener_web'
+  gem 'haml_lint', require: false
 
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
