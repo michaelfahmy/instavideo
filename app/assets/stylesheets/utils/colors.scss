@@ -1,10 +1,27 @@
 // Background Colors
 .bg-eggshell { background-color: $color-eggshell }
+.bg-butter { background-color: $color-butter }
+.bg-fresh { background-color: $color-fresh }
+.bg-ocean { background-color: $color-ocean }
+.bg-coral { background-color: $color-coral }
 
 .hover-bg-eggshell:hover { background-color: $color-eggshell }
+.hover-bg-coral:hover { background-color: $color-coral }
 
 // Text Colors
 .text-eggshell { color: $color-eggshell }
+.text-butter { color: $color-butter }
+.text-fresh { color: $color-fresh }
+.text-ocean { color: $color-ocean }
+.text-coral { color: $color-coral }
+
+.hover-text-fresh:hover { color: $color-fresh }
 
 // Border Colors
 .border-eggshell { border-color: $color-eggshell }
+.border-butter { border-color: $color-butter }
+.border-fresh { border-color: $color-fresh }
+.border-ocean { border-color: $color-ocean }
+.border-coral { border-color: $color-coral }
+
+.hover-border-fresh:hover { border-color: $color-fresh }
