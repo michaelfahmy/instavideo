@@ -1,13 +1,13 @@
 #registerModal.modal.fade{ tabindex: '-1', role: 'dialog' }
   .modal-dialog
     .modal-content
-      .modal-header
-        .h5.modal-title Welcome to InstaVideo
-        %button.close{ 'data-dismiss' => 'modal', 'aria-label' => 'close' } &times;
-      .modal-body
-        %form
-          %input.form-control.mb-2.mr-sm-2{ 'aria-label' => 'email', placeholder: 'Email', type: 'email' }
-          %input.form-control.mr-sm-2{ 'aria-label' => 'password', placeholder: 'Password', type: 'password' }
-      .modal-footer
-        %button.btn.btn-secondary{ 'data-dismiss': 'modal' } Cancel
-        %button.btn.btn-success{ type: 'submit' } Register
+      = form_with scope: :user, url: user_registration_path, local: true do |f|
+        .modal-header
+          .h5.modal-title Welcome to InstaVideo
+          %button.close{ 'data-dismiss' => 'modal', 'aria-label' => 'close' } &times;
+        .modal-body
+          = f.email_field :email, placeholder: 'Email', required: true, class: 'form-control mb-2 mr-sm-2'
+          = f.password_field :password, placeholder: 'Password', required: true, class: 'form-control mb-2 mr-sm-2'
+        .modal-footer
+          %button.btn.btn-secondary{ 'data-dismiss': 'modal' } Cancel
+          = f.submit 'Register', class: 'btn btn-success'

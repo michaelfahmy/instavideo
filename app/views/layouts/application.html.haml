@@ -8,7 +8,15 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
     = stylesheet_pack_tag 'application'
-  %body.bg-eggshell
+  %body.bg-butter
     = render 'shared/header'
-    .container.vh-100.bg-white
+    .container.vh-100.bg-fresh.p-3
+      - if notice
+        .alert.alert-success.alert-dismissible.fade.show
+          = notice
+          %button.close{ 'data-dismiss' => 'alert' } &times;
+      - if alert
+        .alert.alert-danger.alert-dismissible.fade.show
+          = alert
+          %button.close{ 'data-dismiss' => 'alert' } &times;
       = yield
