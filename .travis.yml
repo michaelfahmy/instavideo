@@ -5,7 +5,6 @@ services: postgresql
 
 before_script:
   - psql -c 'create database instavideo_test;' -U postgres
-  - rm -r public/packs-test
 
 script:
   - bundle exec rubocop
