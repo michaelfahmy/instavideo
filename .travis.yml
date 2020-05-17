@@ -5,10 +5,11 @@ services: postgresql
 
 before_script:
   - psql -c 'create database instavideo_test;' -U postgres
+  - rm -r public/packs-test
 
 script:
   - bundle exec rubocop
   - bundle exec brakeman -6 -q
-  - rm -r public/packs-test && bundle exec rspec
+  - bundle exec rspec
   - git fetch origin master:master
   - bundle exec undercover -c master
