@@ -9,6 +9,6 @@ before_script:
 script:
   - bundle exec rubocop
   - bundle exec brakeman -6 -q
-  - bundle exec rspec
+  - rm -r public/packs-test && bundle exec rspec
   - git fetch origin master:master
   - bundle exec undercover -c master
