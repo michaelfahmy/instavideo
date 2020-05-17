@@ -1,15 +1,15 @@
 // Background colors
-.bg-eggshell { background-color: $color-eggshell }
+.bg-light { background-color: $color-light }
 .bg-butter { background-color: $color-butter }
 .bg-fresh { background-color: $color-fresh }
 .bg-ocean { background-color: $color-ocean }
 .bg-coral { background-color: $color-coral }
 
-.hover-bg-eggshell:hover { background-color: $color-eggshell }
+.hover-bg-light:hover { background-color: $color-light }
 .hover-bg-coral:hover { background-color: $color-coral }
 
 // Text colors
-.text-eggshell { color: $color-eggshell }
+.text-light { color: $color-light }
 .text-butter { color: $color-butter }
 .text-fresh { color: $color-fresh }
 .text-ocean { color: $color-ocean }
@@ -18,7 +18,7 @@
 .hover-text-fresh:hover { color: $color-fresh }
 
 // Border colors
-.border-eggshell { border-color: $color-eggshell !important }
+.border-light { border-color: $color-light !important }
 .border-butter { border-color: $color-butter !important }
 .border-fresh { border-color: $color-fresh !important }
 .border-ocean { border-color: $color-ocean !important }
@@ -28,7 +28,7 @@
 
 // Button colors
 .btn-outline-coral {
-  color: $light;
+  color: $color-light;
   background-color: $color-coral;
 
   &:hover {
