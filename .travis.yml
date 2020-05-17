@@ -1,6 +1,11 @@
 language: ruby
 rvm: 2.7
-cache: bundler
+node_js: '13.12'
+
+cache:
+  - bundler
+  - yarn
+
 services: postgresql
 
 before_script:
