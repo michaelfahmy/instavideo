@@ -36,6 +36,9 @@ Style/Documentation:
     - app/helpers/**/*.rb
     - db/migrate/**/*.rb
 
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 Style/RegexpLiteral:
   AllowInnerSlashes: true
 
