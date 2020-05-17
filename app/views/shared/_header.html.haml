@@ -6,7 +6,7 @@
     - if user_signed_in?
       .ml-auto.d-flex.align-items-center
         .text-light.mr-2 Welcome #{current_user.email}
-        = link_to 'Share a movie', '#', class: 'btn btn-sm btn-light mr-2'
+        = link_to 'Share a movie', new_video_post_path, class: 'btn btn-sm btn-light mr-2'
         = link_to 'Logout', destroy_user_session_path, method: :delete, class: 'btn btn-sm btn-outline-light'
     - else
       .d-flex.flex-column.ml-auto

@@ -1,15 +1,15 @@
-// Background Colors
-.bg-eggshell { background-color: $color-eggshell }
+// Background colors
+.bg-light { background-color: $color-light }
 .bg-butter { background-color: $color-butter }
 .bg-fresh { background-color: $color-fresh }
 .bg-ocean { background-color: $color-ocean }
 .bg-coral { background-color: $color-coral }
 
-.hover-bg-eggshell:hover { background-color: $color-eggshell }
+.hover-bg-light:hover { background-color: $color-light }
 .hover-bg-coral:hover { background-color: $color-coral }
 
-// Text Colors
-.text-eggshell { color: $color-eggshell }
+// Text colors
+.text-light { color: $color-light }
 .text-butter { color: $color-butter }
 .text-fresh { color: $color-fresh }
 .text-ocean { color: $color-ocean }
@@ -17,11 +17,23 @@
 
 .hover-text-fresh:hover { color: $color-fresh }
 
-// Border Colors
-.border-eggshell { border-color: $color-eggshell }
-.border-butter { border-color: $color-butter }
-.border-fresh { border-color: $color-fresh }
-.border-ocean { border-color: $color-ocean }
-.border-coral { border-color: $color-coral }
+// Border colors
+.border-light { border-color: $color-light !important }
+.border-butter { border-color: $color-butter !important }
+.border-fresh { border-color: $color-fresh !important }
+.border-ocean { border-color: $color-ocean !important }
+.border-coral { border-color: $color-coral !important }
 
 .hover-border-fresh:hover { border-color: $color-fresh }
+
+// Button colors
+.btn-outline-coral {
+  color: $color-light;
+  background-color: $color-coral;
+
+  &:hover {
+    color: $color-coral;
+    border-color: $color-coral;
+    background-color: transparent;
+  }
+}
