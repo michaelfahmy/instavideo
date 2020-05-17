@@ -58,6 +58,7 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'rails-controller-testing'
   gem 'undercover'
   gem 'simplecov'
   gem 'simplecov-lcov'

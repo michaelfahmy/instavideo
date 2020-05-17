@@ -45,3 +45,7 @@ Style/SymbolArray:
 # Rspec
 RSpec/ExampleLength:
   Enabled: false
+
+RSpec/NestedGroups:
+  Max: 4
+

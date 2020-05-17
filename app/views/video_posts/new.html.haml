@@ -1,0 +1,9 @@
+.row.align-items-end.h-50
+  .border.border-coral.rounded.w-50.mx-auto.p-3.position-relative
+    .position-absolute.top-n10p.bg-fresh.px-2 Share a Youtube video
+    = form_with url: video_posts_path, local: true, class: 'm-4' do |f|
+      .form-group.row
+        .col-lg-4.col-xl-3= f.label :link, 'Youtube URL:', class: 'col-form-label'
+        .col-lg-8.col-xl-9= f.text_field :link, autofocus: true, required: true, class: 'form-control'
+      .form-group.row.justify-content-end
+        .col-lg-8.col-xl-9= f.submit 'Share', class: 'w-100 btn btn-outline-coral'
