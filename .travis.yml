@@ -1,12 +1,15 @@
 language: ruby
 rvm: 2.7
-node_js: 13
-
 cache:
   - bundler
   - yarn
 
 services: postgresql
+
+before_install:
+  - sudo npm cache clean -f
+  - sudo npm install -g n
+  - sudo n stable
 
 before_script:
   - node -v && yarn -v
